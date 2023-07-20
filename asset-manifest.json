@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ritesh-app/static/css/main.abd64e84.css",
+    "main.js": "/ritesh-app/static/js/main.0b6d6b28.js",
+    "static/js/787.0d1552a4.chunk.js": "/ritesh-app/static/js/787.0d1552a4.chunk.js",
+    "index.html": "/ritesh-app/index.html",
+    "main.abd64e84.css.map": "/ritesh-app/static/css/main.abd64e84.css.map",
+    "main.0b6d6b28.js.map": "/ritesh-app/static/js/main.0b6d6b28.js.map",
+    "787.0d1552a4.chunk.js.map": "/ritesh-app/static/js/787.0d1552a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.0b6d6b28.js"
+  ]
+}
