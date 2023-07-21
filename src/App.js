@@ -1,13 +1,13 @@
 import React,{ useState } from 'react';
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import ALert from './components/ALert';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route} from "react-router-dom";
 function App() {
 
 
@@ -45,7 +45,7 @@ function App() {
     setMode('dark');
     document.body.style.backgroundColor = '#121212';
     showAlert("Dark Mode has been Enabled","success")
-    document.title ='Ritesh App - Dark Mode';
+    // document.title ='Ritesh App - Dark Mode';
     // setInterval(() => {
     //   document.title = 'Ritesh App is Amazing Mode';
     // },2000);
@@ -57,7 +57,7 @@ function App() {
       setMode('light');
     document.body.style.backgroundColor = 'white';
     showAlert("Light Mode has been Enabled","success")
-    document.title ='Ritesh App - Light Mode';    
+    // document.title ='Ritesh App - Light Mode';    
     }
   }
 
@@ -65,24 +65,24 @@ function App() {
     
     <>
 
-      {/* <Router> */}
+      <Router>
     
        <Navbar title="Ritesh" aboutText="About us" mode={mode} toggleMode={toggleMode} /> {/*toggleMode1={toggleMode1}  */}
       <ALert alert={alert} />
       <div className="container my-3"> 
-      {/* <Switch> */}
+      <Switch>
         {/* /users.--> component1
         /users/home.--> Component2 Thats why we use exact */}
-          {/* <Route exact path="/about"> */}
-            {/* <About /> */}
-          {/* </Route> */}
-          {/* <Route exact path="/"> */}
-          <TextForm showAlert={showAlert} heading = "Enter Text Below to Analyze" mode={mode} />
-          {/* </Route> */}
-        {/* </Switch> */}
+          <Route exact path="/about">
+            <About mode={mode} />
+          </Route>
+          <Route exact path="/">
+          <TextForm showAlert={showAlert} heading = "Ritesh-app - Word Counter, Character Counter" mode={mode} />
+          </Route>
+        </Switch>
       </div>
 
-      {/* </Router> */}
+      </Router>
     
     </>
 
